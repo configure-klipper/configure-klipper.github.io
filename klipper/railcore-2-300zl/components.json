@@ -1,0 +1,104 @@
+[
+	{
+		"name":"component type one", 
+		"description":"the description for component type one",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"ct1/aa.cfg", 
+				"name":"component type one a", 
+				"description":"component type one a description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct1/bb.cfg", 
+				"name":"component type one b", 
+				"description":"component type one b description"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"ct1/cc.cfg", 
+				"name":"component type one c", 
+				"description":"component type one c description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct1/dd.cfg", 
+				"name":"component type one d", 
+				"description":"component type one d description"
+			}
+		]
+	},
+	{
+		"name":"component type two", 
+		"description":"the description for component type two",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"ct2/aa.cfg", 
+				"name":"component type two a", 
+				"description":"component type two a description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct2/bb.cfg", 
+				"name":"component type one b", 
+				"description":"component type two b description"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"ct2/cc.cfg", 
+				"name":"component type one c", 
+				"description":"component type two c description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct2/dd.cfg", 
+				"name":"component type one d", 
+				"description":"component type two d description"
+			}
+		]
+	},
+	{
+		"name":"component type three", 
+		"description":"the description for component type three",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"ct3/aa.cfg", 
+				"name":"component type three a", 
+				"description":"component type three a description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct3/bb.cfg", 
+				"name":"component type three b", 
+				"description":"component type three b description"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"ct3/cc.cfg", 
+				"name":"component type three c", 
+				"description":"component type three c description"
+			},	
+			{
+				"required": false,
+				"template": true,
+				"path":"ct3/dd.cfg", 
+				"name":"component type three d", 
+				"description":"component type three d description"
+			}
+		]
+	}
+]
