@@ -1,104 +1,173 @@
 [
 	{
-		"name":"component type one", 
-		"description":"the description for component type one",
+		"name":"Motion", 
+		"description":"The components related to X, Y, and Z motion. Select the XY component and one of the Z components.",
 		"components":[
 			{
 				"required": false,
 				"template": true,
-				"path":"ct1/aa.cfg", 
-				"name":"component type one a", 
-				"description":"component type one a description"
-			},	
-			{
-				"required": false,
-				"template": true,
-				"path":"ct1/bb.cfg", 
-				"name":"component type one b", 
-				"description":"component type one b description"
+				"path":"motion/XY.cfg", 
+				"name":"XY", 
+				"description":"The X & Y axis motion component"
 			},
 			{
 				"required": false,
 				"template": true,
-				"path":"ct1/cc.cfg", 
-				"name":"component type one c", 
-				"description":"component type one c description"
-			},	
+				"path":"motion/Z_0.9_8x2.cfg", 
+				"name":"Z 0.9 8x2", 
+				"description":"Z axis using 0.9 degree stepper motors & T8x2 Leadscrews"
+			},
 			{
 				"required": false,
 				"template": true,
-				"path":"ct1/dd.cfg", 
-				"name":"component type one d", 
-				"description":"component type one d description"
+				"path":"motion/Z_0.9_8x4.cfg", 
+				"name":"Z 0.9 8x4", 
+				"description":"Z axis using 0.9 degree stepper motors & T8x4 Leadscrews (modern kit specification)"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"motion/Z_0.9_8x8.cfg", 
+				"name":"Z 0.9 8x8", 
+				"description":"Z axis using 0.9 degree stepper motors & T8x8 Leadscrews"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"motion/Z_1.8_8x2.cfg", 
+				"name":"Z 1.8 8x2", 
+				"description":"Z axis using 1.8 degree stepper motors & T8x2 Leadscrews"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"motion/Z_1.8_8x4.cfg", 
+				"name":"Z 1.8 8x4", 
+				"description":"Z axis using 1.8 degree stepper motors & T8x4 Leadscrews"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"motion/Z_1.8_8x8.cfg", 
+				"name":"Z 1.8 8x8", 
+				"description":"Z axis using 1.8 degree stepper motors & T8x8 Leadscrews"
 			}
 		]
 	},
 	{
-		"name":"component type two", 
-		"description":"the description for component type two",
+		"name":"Stepper Drivers", 
+		"description":"The stepper drivers used for The X, Y, and Z axises, as well as the Extruder.",
 		"components":[
 			{
 				"required": false,
 				"template": true,
-				"path":"ct2/aa.cfg", 
-				"name":"component type two a", 
-				"description":"component type two a description"
-			},	
-			{
-				"required": false,
-				"template": true,
-				"path":"ct2/bb.cfg", 
-				"name":"component type one b", 
-				"description":"component type two b description"
+				"path":"stepper/2660_XY.cfg", 
+				"name":"2660 XY", 
+				"description":"Trinamic TMC2660s for the X & Y axis"
 			},
 			{
 				"required": false,
 				"template": true,
-				"path":"ct2/cc.cfg", 
-				"name":"component type one c", 
-				"description":"component type two c description"
-			},	
+				"path":"stepper/2660_Z.cfg", 
+				"name":"2660 Z", 
+				"description":"Trinamic TMC2660s for the Z axis"
+			},
 			{
 				"required": false,
 				"template": true,
-				"path":"ct2/dd.cfg", 
-				"name":"component type one d", 
-				"description":"component type two d description"
+				"path":"stepper/2660_E.cfg", 
+				"name":"2660 E", 
+				"description":"Trinamic TMC2660s for the extruder"
 			}
 		]
 	},
 	{
-		"name":"component type three", 
-		"description":"the description for component type three",
+		"name":"Probes", 
+		"description":"The probe used to home the Z axis.",
 		"components":[
 			{
-				"required": false,
-				"template": true,
-				"path":"ct3/aa.cfg", 
-				"name":"component type three a", 
-				"description":"component type three a description"
-			},	
+				"required": true,
+				"template": false,
+				"path":"probe/bedmesh.cfg", 
+				"name":"bedmesh.cfg", 
+				"description":"bedmesh.cfg"
+			},
 			{
-				"required": false,
-				"template": true,
-				"path":"ct3/bb.cfg", 
-				"name":"component type three b", 
-				"description":"component type three b description"
+				"required": true,
+				"template": false,
+				"path":"probe/bltouch-customization.cfg", 
+				"name":"bltouch-customization.cfg", 
+				"description":"bltouch-customization.cfg"
 			},
 			{
 				"required": false,
 				"template": true,
-				"path":"ct3/cc.cfg", 
-				"name":"component type three c", 
-				"description":"component type three c description"
-			},	
+				"path":"probe/bltouch.cfg", 
+				"name":"BLTouch", 
+				"description":"Antclabs BLTouch (modern kit specification)"
+			}
+		]
+	},
+	{
+		"name":"Extruders", 
+		"description":"Extruders Known work well, pick 0ne.",
+		"components":[
 			{
 				"required": false,
 				"template": true,
-				"path":"ct3/dd.cfg", 
-				"name":"component type three d", 
-				"description":"component type three d description"
+				"path":"extruder/bondtech_bmg.cfg", 
+				"name":"BMG", 
+				"description":"Bondtech BMG with 0.9 degree stepper (modern kit specification)"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"extruder/bondtech_lgx_lite.cfg", 
+				"name":"LGX Lite", 
+				"description":"Bondtech LGX Lite with LDO-32STH20-1004AHG(XH) stepper"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"extruder/ldo_orbiter_15.cfg", 
+				"name":"Orbiter 1.5", 
+				"description":"LDO Orbiter V1.5 with 1004 Motor"
+			}
+		]
+	},
+	{
+		"name":"Hotends", 
+		"description":"Hotends known to work well, pick 0ne.",
+		"components":[
+			{
+				"required": true,
+				"template": false,
+				"path":"hotend/hotend.cfg", 
+				"name":"hotend.cfg", 
+				"description":"hotend.cfg"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"hotend/e3d_v6_aluminum_block.cfg", 
+				"name":"V6 Al", 
+				"description":"E3D V6 Aluminum block"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"hotend/e3d_v6_copper_block.cfg", 
+				"name":"V6 Cu", 
+				"description":"E3D V6 Copper block"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"hotend/mosquito.cfg", 
+				"name":"Mosquito", 
+				"description":"Slice Engineering Mosquito"
 			}
 		]
 	}
+
 ]

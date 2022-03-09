@@ -192,7 +192,7 @@ export default class Printer extends Abstract{
                     for (var k = 0; k < this.repacements.length; k++){
                         let key = this.repacements[k].key;
                         let val = this.repacements[k].value;
-                        str = str.replaceAll('$' + key + '$', val);    
+                        str = str.replaceAll('$$' + key + '$$', val);    
                     }
 
                     this.contents[i].components[j].contents = str;

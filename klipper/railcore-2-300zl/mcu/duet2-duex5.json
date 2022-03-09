@@ -1,6 +1,137 @@
 [
-	{"key":"key_1", "value":"!PA6"},
-	{"key":"key_2", "value":"!PA7"},
-	{"key":"key_3", "value":"!PA8"},
-	{"key":"key_4", "value":"!PA9"}
+// Stepper Drivers
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen X On Duet
+{"key":"X_STEP", "value":"PD6"}, {"key":"X_DIR", "value":"PD11"}, {"key":"X_EN", "value":"!PC6"}, {"key":"X_CS", "value":"PD14"},
+// Silkscreen Y On Duet
+{"key":"Y_STEP", "value":"PD7"}, {"key":"Y_DIR", "value":"!PD12"}, {"key":"Y_EN", "value":"!PC6"}, {"key":"Y_CS", "value":"PC9"},
+// Silkscreen z On Duet
+{"key":"AUX0_STEP", "value":"PD8"}, {"key":"AUX0_DIR", "value":"PD13"}, {"key":"AUX0_EN", "value":"!PC6"}, {"key":"AUX0_CS", "value":"PC10"},
+// Silkscreen E0 On Duet
+{"key":"E0_STEP", "value":"PD5"}, {"key":"E0_DIR", "value":"PA1"}, {"key":"E0_EN", "value":"!PC6"}, {"key":"E0_CS", "value":"PC17"},
+// Silkscreen E1 On Duet
+{"key":"AUX1_STEP", "value":"PD4"}, {"key":"AUX1_DIR", "value":"PD9"}, {"key":"AUX1_EN", "value":"!PC6"}, {"key":"AUX1_CS", "value":"PC25"},
+// Silkscreen E2 on Duex 5
+{"key":"Z0_STEP", "value":"PD2"}, {"key":"Z0_DIR", "value":"PD28"}, {"key":"Z0_EN", "value":"!PC6"}, {"key":"Z0_CS", "value":"PD23"},
+// Silkscreen E3 on Duex 5
+{"key":"Z1_STEP", "value":"PD1"}, {"key":"Z1_DIR", "value":"PD22"}, {"key":"Z1_EN", "value":"!PC6"}, {"key":"Z1_CS", "value":"PD24"},
+// Silkscreen E4 on Duex 5
+{"key":"Z2_STEP", "value":"PD0"}, {"key":"Z2_DIR", "value":"PD16"}, {"key":"Z2_EN", "value":"!PC6"}, {"key":"Z2_CS", "value":"PD25"},
+// Silkscreen E5 on Duex 5
+{"key":"AUX2_STEP", "value":"PD3"}, {"key":"AUX2_DIR", "value":"PD17"}, {"key":"AUX2_EN", "value":"!PC6"}, {"key":"AUX2_CS", "value":"PD26"},
+// Silkscreen E6 on Duex 5
+{"key":"AUX3_STEP", "value":"PD27"}, {"key":"AUX3_DIR", "value":"PC0"}, {"key":"AUX3_EN", "value":"!PC6"}, {"key":"AUX3_CS", "value":"PB14"},
+
+
+// Fans
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen PWM fans 0 On Duet
+{"key":"HOTEND_FAN", "value":"PC23"},
+// Silkscreen PWM fans 1 On Duet
+{"key":"PART_FAN", "value":"PC26"},
+// Silkscreen PWM fans 2 On Duet
+{"key":"AUX_FAN_0", "value":"PA0"},
+// Silkscreen PWM fans 3 On Duex 5
+{"key":"AUX_FAN_1", "value":"sx1509_duex:PIN_12"},
+// Silkscreen PWM fans 4 On Duex 5
+{"key":"AUX_FAN_2", "value":"sx1509_duex:PIN_7"},
+// Silkscreen PWM fans 5 On Duex 5
+{"key":"AUX_FAN_3", "value":"sx1509_duex:PIN_6"},
+// Silkscreen PWM fans 6 On Duex 5
+{"key":"AUX_FAN_4", "value":"sx1509_duex:PIN_5"},
+// Silkscreen PWM fans 7 On Duex 5
+{"key":"AUX_FAN_5", "value":"sx1509_duex:PIN_4"},
+// Silkscreen PWM fans 8 On Duex 5
+{"key":"AUX_FAN_6", "value":"sx1509_duex:PIN_15"},
+
+
+// Endstops
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen X On Duet
+{"key":"X_STOP", "value":"^PC14"},
+// Silkscreen Y On Duet
+{"key":"Y_STOP", "value":"^PA2"},
+// Silkscreen Z On Duet
+{"key":"Z_STOP", "value":"PD29"},
+// Silkscreen E0 On Duet
+{"key":"AUX0_STOP", "value":"PD10"},
+// Silkscreen E1 On Duet
+{"key":"AUX1_STOP", "value":"PC16"},
+
+
+// Heaters
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen BED HEAT On Duet
+{"key":"HEATER_BED", "value":"PA19"},
+// Silkscreen E0 HEAT On Duet
+{"key":"E0_HEAT", "value":"!PA20"},
+// Silkscreen E1 HEAT On Duet
+{"key":"AUX0_HEAT", "value":"PA16"},
+// Silkscreen E2 HEAT On Duex 5
+{"key":"AUX1_HEAT", "value":"PC3"},
+// Silkscreen E3 HEAT On Duex 5
+{"key":"AUX2_HEAT", "value":"PC5"},
+// Silkscreen E4 HEAT On Duex 5
+{"key":"AUX3_HEAT", "value":"PC8"},
+// Silkscreen E5 HEAT On Duex 5
+{"key":"AUX4_HEAT", "value":"PC11"},
+// Silkscreen E6 HEAT On Duex 5
+{"key":"AUX5_HEAT", "value":"PA15"},
+
+
+// Temperature Sensors 
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen BED TEMP On Duet
+{"key":"BED_TEMP", "value":"PC13"},
+// Silkscreen E0 TEMP On Duet
+{"key":"E0_THERMISTOR", "value":"PC15"},
+// Silkscreen E1 TEMP On Duet
+{"key":"BED_AUX_TEMP", "value":"PC12"},
+// Silkscreen E2 TEMP On Duex 5
+{"key":"AUX0_THERMISTOR", "value":"PC29"},
+// Silkscreen E3 TEMP On Duex 5
+{"key":"AUX1_THERMISTOR", "value":"PC20"},
+// Silkscreen E4 TEMP On Duex 5
+{"key":"AUX2_THERMISTOR", "value":"PC31"},
+// Silkscreen E5 TEMP On Duex 5
+{"key":"AUX3_THERMISTOR", "value":"PC27"},
+// Silkscreen E6 TEMP On Duex 5
+{"key":"AUX4_THERMISTOR", "value":"PA18"},
+
+
+// pwm/servos 
+//------------------------------------------------------------------------------------------------------------------------
+// Silkscreen Pwm_1 On Duex 5
+{"key":"PWM_1", "value":"!PC3"},
+// Silkscreen Pwm_2 On Duex 5
+{"key":"PWM_2", "value":"!PC5"},
+// Silkscreen Pwm_3 On Duex 5
+{"key":"PWM_3", "value":"!PC8"},
+// Silkscreen Pwm_4 On Duex 5
+{"key":"PWM_4", "value":"!PC11"},
+// Silkscreen Pwm_5 On Duex 5
+{"key":"PWM_5", "value":"!PA15"},
+
+
+// Z PROBE
+//------------------------------------------------------------------------------------------------------------------------
+{"key":"Z_PROBE_IN", "value":"PC1"}, {"key":"Z_PROBE_MOD", "value":"PC2"},
+
+
+// daughterboards
+//------------------------------------------------------------------------------------------------------------------------
+// first board on duet Silkscreen RTD1, RTD2 
+{"key":"DAUGHTER_0", "value":"PB2"}, {"key":"DAUGHTER_1", "value":"PC18"},
+// second board on duet Silkscreen RTD1, RTD2 
+{"key":"DAUGHTER_2", "value":"PC19"}, {"key":"DAUGHTER_3", "value":"PC20"},
+// first board on duex Silkscreen RTD1, RTD2
+{"key":"DAUGHTER_4", "value":"PA24"}, {"key":"DAUGHTER_5", "value":"PE1"},
+// second board on duex Silkscreen RTD1, RTD2
+{"key":"DAUGHTER_6", "value":"PE2"}, {"key":"DAUGHTER_7", "value":"PE3"},
+
+
+// BLTouch
+//------------------------------------------------------------------------------------------------------------------------
+{"key":"BLT_SENSOR", "value":"^PC1"}, {"key":"BLT_CONTROL", "value":"!PC3"}
+
 ]

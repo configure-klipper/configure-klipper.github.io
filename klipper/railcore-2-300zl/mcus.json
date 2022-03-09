@@ -1,4 +1,3 @@
 [
-	{"name":"Duet 2 & Duex 5", "path":"mcu/duet2-duex5.cfg", "replacementsPath":"mcu/duet2-duex5.json", "template":true},
-	{"name":"Duet 3", "path":"mcu/duet3.cfg", "replacementsPath":"mcu/duet3.json", "template":true}
+	{"name":"Duet 2 & Duex 5", "path":"mcu/duet2-duex5.cfg", "replacementsPath":"mcu/duet2-duex5.json", "template":true}
 ]
