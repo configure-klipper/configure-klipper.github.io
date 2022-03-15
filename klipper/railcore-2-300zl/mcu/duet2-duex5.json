@@ -62,21 +62,21 @@
 // Heaters
 //------------------------------------------------------------------------------------------------------------------------
 // Silkscreen BED HEAT On Duet
-{"key":"HEATER_BED", "value":"PA19"},
+{"key":"HEATER_BED", "value":"!PA19"},
 // Silkscreen E0 HEAT On Duet
 {"key":"E0_HEAT", "value":"!PA20"},
 // Silkscreen E1 HEAT On Duet
-{"key":"AUX0_HEAT", "value":"PA16"},
+{"key":"AUX0_HEAT", "value":"!PA16"},
 // Silkscreen E2 HEAT On Duex 5
-{"key":"AUX1_HEAT", "value":"PC3"},
+{"key":"AUX1_HEAT", "value":"!PC3"},
 // Silkscreen E3 HEAT On Duex 5
-{"key":"AUX2_HEAT", "value":"PC5"},
+{"key":"AUX2_HEAT", "value":"!PC5"},
 // Silkscreen E4 HEAT On Duex 5
-{"key":"AUX3_HEAT", "value":"PC8"},
+{"key":"AUX3_HEAT", "value":"!PC8"},
 // Silkscreen E5 HEAT On Duex 5
-{"key":"AUX4_HEAT", "value":"PC11"},
+{"key":"AUX4_HEAT", "value":"!PC11"},
 // Silkscreen E6 HEAT On Duex 5
-{"key":"AUX5_HEAT", "value":"PA15"},
+{"key":"AUX5_HEAT", "value":"!PA15"},
 
 
 // Temperature Sensors 

@@ -168,6 +168,106 @@
 				"description":"Slice Engineering Mosquito"
 			}
 		]
+	},
+	{
+		"name":"Heaters", 
+		"description":"Heaters used for the bed and the chamber",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"heater/ssr_keenovo.cfg", 
+				"name":"Keenovo", 
+				"description":"750W Keenovo bed heater (modern kit specification)"
+			}
+		]
+	},
+	{
+		"name":"Fans", 
+		"description":"The various fans used in the printer",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"fan/hotend_e3d_30mm.cfg", 
+				"name":"E3D 30mm", 
+				"description":"The standard fan used with E3D hotends"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"fan/hotend_mosquito_5015.cfg", 
+				"name":"Mosquito 5015", 
+				"description":"A Delta 5015 (BFB0524HH) for cooling a Slice Engineering Mosquito"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"fan/part_jt_delta.cfg", 
+				"name":"James Tongue", 
+				"description":"A Delta 5015 (BFB0524HH)  mounted  to James Tongue duct part cooling duct"
+			}
+		]
+	},
+	{
+		"name":"Temperature Sensors", 
+		"description":"The various temperature sensors used in the printer",
+		"components":[
+			{
+				"required": false,
+				"template": true,
+				"path":"temp/bed_3950.cfg", 
+				"name":"3950", 
+				"description":"A standard 3950 thermistor mounted in the top of the bed"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"temp/keenovo_3950.cfg", 
+				"name":"Keenovo", 
+				"description":"The secondary 3950 thermistor in the Keenovo heater"
+			},
+			{
+				"required": false,
+				"template": true,
+				"path":"temp/duet2_daughterboard_rtd1_pt100.cfg", 
+				"name":"pt100 & daughterboard", 
+				"description":"A pt100 and daughterboard connected to the duet 2 for the hotend"
+			}
+		]
+	},
+	{
+		"name":"Macros", 
+		"description":"Various Macros that can be used to increase the functionality of Klipper",
+		"components":[
+			{
+				"required": false,
+				"template": false,
+				"path":"macros/homing.cfg", 
+				"name":"Homing", 
+				"description":"A marco that homes all 3 axis, levels the bed, and re-homes the Z"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"macros/go_home.cfg", 
+				"name":"Go Home", 
+				"description":"A simple macro that sends the prind head to x=0, y=0"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"macros/go_center.cfg", 
+				"name":"Go Home", 
+				"description":"A simple macro that sends the prind head to x=150, y=150"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"macros/go_park.cfg", 
+				"name":"Go Home", 
+				"description":"A simple macro that sends the prind head to x=300, y=300"
+			}
+		]
 	}
-
 ]
