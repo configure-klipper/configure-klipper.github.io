@@ -82,6 +82,15 @@ export default class Component extends Abstract{
             label.innerHTML = this.name;
             component.appendChild(label);  
 
+            let link = document.createElement('a');
+            link.classList.add('sLink');
+            link.target = '_blank';
+            link.title = "source";
+            let linkText = document.createTextNode("source");
+            link.appendChild(linkText);
+            link.href = this.dir + this.path;
+            component.appendChild(link); 
+
             let description = document.createElement('div');
             description.classList.add('componentDescription');
             description.innerHTML = this.description;

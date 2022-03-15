@@ -1,9 +1,9 @@
 body {
-    background-color: #f2eeea;
+    background-color: #fcfcfc;
     margin: 0;
     padding: 1.5rem;
     font-family: Georgia, sans-serif;
-    color: #666;
+    color: #757472;
 }
 
 div#page{
@@ -75,4 +75,18 @@ div.component label{
 
 div.componentDescription{
     margin-left: 2rem;   
+}
+
+a.sLink{
+    font-size: 0.875rem;
+    margin-left: 0.5rem;       
+}
+
+a:link, a:visited, a:active{
+    color: #e24a37;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: #6b1a0f;
 }
