@@ -220,8 +220,8 @@ export default class Printer extends Abstract{
                     }
 
                     if(path == 'printer.cfg'){
-                        str = "[include user.cfg]\n\n" + str;
                         str = "[include includes.cfg]\n\n" + str;
+                        str = str + "\n\n[include user.cfg]";
                     }
 
                     zip.file(path, str);
