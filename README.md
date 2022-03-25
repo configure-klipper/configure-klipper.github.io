@@ -6,8 +6,8 @@ Do to the range of MCUs Klipper supports, and the wide variety of hardware confi
 To help address this, the aplicaiton splits Klipper configurations into a number of discrete components/modules, allowing the user to easily pick and choose components via the interface to match their build.
 
 **Documentation**
-- [User Documentation](https://github.com/configure-klipper/configure-klipper.github.io#user-documentation)
-- [Developer Documentation](https://github.com/configure-klipper/configure-klipper.github.io#developer-documentation)
+- [User Documentation](#user-documentation)
+- [Developer Documentation](#developer-documentation)
 
 ### User Documentation
 ### Developer Documentation
