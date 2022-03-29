@@ -15,7 +15,7 @@ Generating a modular configuration, is very simple thanks to the simplicity of t
 2. Select the printer you want to generate a configuration for. 
 3. Select the Mcu your printer is using.
 4. select the components/modules used by your printer.
-5. click the **_Generate_** button to generate a the configuraiton.
+5. click the **_Generate_** button to generate the configuraiton.
 6. unzip the the download and follow the steps listed in printer.cfg.
 
 ### Developer Documentation
