@@ -62,4 +62,15 @@ Components are the meat and potatoes of the application, but are very simple to 
     - name : A short sting to describe the component.
     - description : A much longer string thats can used to provide additional details or special instructions related to the component.
 
+4. Templating
+Templating is the mechanism that takes the [mcu replacement pins](https://github.com/configure-klipper/configure-klipper.github.io/blob/main/klipper/railcore-2-300zl/mcu/duet2-duex5.json), and injects them into the cfg files needed for Klipper to work. The templating engine takes each key found in the mcu pin replacement file, and looks for them in the cfg files that have templating set to true. If the key is found, it is replaced with its associated value. To ensure nothing is accidentally templated, the engine looks for the keys preprepended and postpended with ‘’$$”, see the following example. 
+```python
+[stepper_x]
+# Rear stepper motor
+step_pin: $$X_STEP$$
+dir_pin: $$X_DIR$$
+enable_pin: $$X_EN$$
+endstop_pin: $$X_STOP$$
+```
+
 
