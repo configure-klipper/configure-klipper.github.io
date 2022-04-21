@@ -250,23 +250,23 @@
 			{
 				"required": false,
 				"template": false,
-				"path":"macros/go_home.cfg", 
+				"path":"macros/go_origin.cfg", 
 				"name":"Go Home", 
-				"description":"A simple macro that sends the prind head to x=0, y=0"
+				"description":"A simple macro that sends the print head to x=0, y=0"
 			},
 			{
 				"required": false,
 				"template": false,
 				"path":"macros/go_center.cfg", 
 				"name":"Go Center", 
-				"description":"A simple macro that sends the prind head to x=150, y=150"
+				"description":"A simple macro that sends the print head to to the center of the print area"
 			},
 			{
 				"required": false,
 				"template": false,
 				"path":"macros/go_park.cfg", 
 				"name":"Go Park", 
-				"description":"A simple macro that sends the prind head to x=300, y=300"
+				"description":"A simple macro that sends the print head to X & Y max"
 			}
 		]
 	}
