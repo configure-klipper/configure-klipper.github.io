@@ -233,6 +233,26 @@
 				"path":"temp/duet2_daughterboard_rtd1_pt100.cfg", 
 				"name":"pt100 & daughterboard", 
 				"description":"A pt100 and daughterboard connected to the duet 2 for the hotend"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"temp/RPi.cfg", 
+				"name":"RPi", 
+				"description":"The host Raspberry Pi"
+			}
+		]
+	},
+	{
+		"name":"accelerometers", 
+		"description":"accelerometers for measuring resonance frequencies of the printer",
+		"components":[
+			{
+				"required": false,
+				"template": false,
+				"path":"accelerometer/adxl345.cfg", 
+				"name":"adxl345", 
+				"description":"a standard adxl345"
 			}
 		]
 	},
@@ -252,7 +272,7 @@
 				"template": false,
 				"path":"macros/go_origin.cfg", 
 				"name":"Go Home", 
-				"description":"A simple macro that sends the print head to x=0, y=0"
+				"description":"A simple macro that sends the print head to X & Y min"
 			},
 			{
 				"required": false,
@@ -267,6 +287,13 @@
 				"path":"macros/go_park.cfg", 
 				"name":"Go Park", 
 				"description":"A simple macro that sends the print head to X & Y max"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"macros/max_out.cfg", 
+				"name":"Max Out", 
+				"description":"A macro to test your printers maximum acceleration & velocity settings"
 			}
 		]
 	}
