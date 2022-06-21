@@ -93,13 +93,6 @@
 				"description":"bedmesh.cfg"
 			},
 			{
-				"required": true,
-				"template": false,
-				"path":"probe/bltouch-customization.cfg", 
-				"name":"bltouch-customization.cfg", 
-				"description":"bltouch-customization.cfg"
-			},
-			{
 				"required": false,
 				"template": true,
 				"path":"probe/bltouch.cfg", 
