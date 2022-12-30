@@ -86,7 +86,7 @@
 // Silkscreen E0 TEMP On Duet
 {"key":"E0_THERMISTOR", "value":"PC15"},
 // Silkscreen E1 TEMP On Duet
-{"key":"BED_AUX_TEMP", "value":"PC12"},
+{"key":"E1_THERMISTOR", "value":"PC12"},
 // Silkscreen E2 TEMP On Duex 5
 {"key":"AUX0_THERMISTOR", "value":"PC29"},
 // Silkscreen E3 TEMP On Duex 5
