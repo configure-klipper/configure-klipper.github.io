@@ -8,49 +8,49 @@
 				"template": true,
 				"path":"motion/XY.cfg", 
 				"name":"XY", 
-				"description":"The X & Y axis motion component"
+				"description":"The X &amp; Y axis motion component"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_0.9_8x2.cfg", 
 				"name":"Z 0.9 8x2", 
-				"description":"Z axis using 0.9 degree stepper motors & T8x2 Leadscrews"
+				"description":"Z axis using 0.9 degree stepper motors &amp; T8x2 Leadscrews"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_0.9_8x4.cfg", 
 				"name":"Z 0.9 8x4", 
-				"description":"Z axis using 0.9 degree stepper motors & T8x4 Leadscrews (modern kit specification)"
+				"description":"Z axis using 0.9 degree stepper motors &amp; T8x4 Leadscrews (modern kit specification)"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_0.9_8x8.cfg", 
 				"name":"Z 0.9 8x8", 
-				"description":"Z axis using 0.9 degree stepper motors & T8x8 Leadscrews"
+				"description":"Z axis using 0.9 degree stepper motors &amp; T8x8 Leadscrews"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_1.8_8x2.cfg", 
 				"name":"Z 1.8 8x2", 
-				"description":"Z axis using 1.8 degree stepper motors & T8x2 Leadscrews"
+				"description":"Z axis using 1.8 degree stepper motors &amp; T8x2 Leadscrews"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_1.8_8x4.cfg", 
 				"name":"Z 1.8 8x4", 
-				"description":"Z axis using 1.8 degree stepper motors & T8x4 Leadscrews"
+				"description":"Z axis using 1.8 degree stepper motors &amp; T8x4 Leadscrews"
 			},
 			{
 				"required": false,
 				"template": true,
 				"path":"motion/Z_1.8_8x8.cfg", 
 				"name":"Z 1.8 8x8", 
-				"description":"Z axis using 1.8 degree stepper motors & T8x8 Leadscrews"
+				"description":"Z axis using 1.8 degree stepper motors &amp; T8x8 Leadscrews"
 			}
 		]
 	},
@@ -63,7 +63,7 @@
 				"template": true,
 				"path":"stepper/2660_XY.cfg", 
 				"name":"2660 XY", 
-				"description":"Trinamic TMC2660s for the X & Y axis"
+				"description":"Trinamic TMC2660s for the X &amp; Y axis"
 			},
 			{
 				"required": false,
@@ -98,12 +98,19 @@
 				"path":"probe/bltouch.cfg", 
 				"name":"BLTouch", 
 				"description":"Antclabs BLTouch (modern kit specification)"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"probe/safe_z_home.cfg", 
+				"name":"safe_z_home", 
+				"description":"The safe_z_home option is used with a bltouch or other Z probe that needs to probe a specific point.<br>This needs to be a standalone config file encase a user wants to use homing_override."
 			}
 		]
 	},
 	{
 		"name":"Extruders", 
-		"description":"Extruders Known work well, pick 0ne.",
+		"description":"Extruders Known to work well, pick 0ne.",
 		"components":[
 			{
 				"required": false,
@@ -265,7 +272,7 @@
 				"template": false,
 				"path":"macros/go_origin.cfg", 
 				"name":"Go Home", 
-				"description":"A simple macro that sends the print head to X & Y min"
+				"description":"A simple macro that sends the print head to X &amp; Y min"
 			},
 			{
 				"required": false,
@@ -279,14 +286,34 @@
 				"template": false,
 				"path":"macros/go_park.cfg", 
 				"name":"Go Park", 
-				"description":"A simple macro that sends the print head to X & Y max"
+				"description":"A simple macro that sends the print head to X &amp; Y max"
 			},
 			{
 				"required": false,
 				"template": false,
 				"path":"macros/max_out.cfg", 
 				"name":"Max Out", 
-				"description":"A macro to test your printers maximum acceleration & velocity settings"
+				"description":"A macro to test your printers maximum acceleration &amp; velocity settings"
+			}
+		]
+	},
+	{
+		"name":"miscellaneous", 
+		"description":"Various settings that allow a greater range of customization",
+		"components":[
+			{
+				"required": false,
+				"template": false,
+				"path":"miscellaneous/force_move.cfg", 
+				"name":"force_move", 
+				"description":"allows a user to force a stepper to move that hasn't been homed"
+			},
+			{
+				"required": false,
+				"template": false,
+				"path":"miscellaneous/respond.cfg", 
+				"name":"respond", 
+				"description":"enables the use of Respond &amp; M118"
 			}
 		]
 	}

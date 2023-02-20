@@ -216,7 +216,7 @@ export default class Validation{
     }
 
     /**
-     * Checks if a string is safe to inject into html safe
+     * Checks if a string is safe to inject into html blindly, ie it contains no html tags.
      * 
      * @param {mixed} input - the variable to test.
      * @throws {TypeError} If input isn't a string
@@ -231,6 +231,25 @@ export default class Validation{
         let reg = /^[^\"><]+$/;
         return reg.test(input);    
     }
+
+    /**
+     * Checks if a string is strictly valid html.
+     * 
+     * @param {mixed} input - the variable to test.
+     * @throws {TypeError} If input isn't a string
+     * @returns {boolean}
+     * 
+     */ 
+    isValidHtml(input){
+        if(typeof input != 'string'){
+            throw new TypeError('input is not a string');
+        }
+
+        let test = document.createElement('div');
+        test.innerHTML = input;
+        return (test.innerHTML === input);
+    }
+
 
     /**
      * Checks if a variable is an object, and has the given properties and that the 
@@ -303,6 +322,11 @@ export default class Validation{
                     break;
                  case 'isHtmlSafe':
                     if(!this.isHtmlSafe(input[names[i]])){
+                        return false;
+                    }
+                    break;
+                 case 'isValidHtml':
+                    if(!this.isValidHtml(input[names[i]])){
                         return false;
                     }
                     break;

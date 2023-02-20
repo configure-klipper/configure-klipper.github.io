@@ -43,7 +43,7 @@ export default class Component extends Abstract{
     constructor(dir = '', parentId = '', id = '', settings = {}){
         super(parentId, id, dir, 'dummyPath.cfg');
 
-        let props = {'path':'isFilePath', 'name':'isHtmlSafe', 'description':'isHtmlSafe', 'required':'boolean', 'template':'boolean'};
+        let props = {'path':'isFilePath', 'name':'isHtmlSafe', 'description':'isValidHtml', 'required':'boolean', 'template':'boolean'};
         if(!this.validator.objectwithPropertiesOfType(settings, props)){
             let msg = 'component ' + id + ' is missing or has invalid properties'; 
             throw new TypeError(msg);
